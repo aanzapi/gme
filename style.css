@@ -1,0 +1,14 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#101827;font-family:Arial,sans-serif}
+#gameWrap{position:relative;width:100%;height:100%;overflow:hidden}
+canvas{display:block;width:100%;height:100%;image-rendering:auto}
+#hud{position:absolute;top:14px;left:14px;right:14px;display:flex;justify-content:space-between;color:#fff;font-weight:800;font-size:18px;text-shadow:0 2px 3px #000;pointer-events:none}
+#message{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(5,10,20,.55);color:#fff;text-align:center}
+#message h1{font-size:clamp(38px,10vw,72px);margin-bottom:10px}
+#message p{font-size:16px;margin-bottom:22px}
+#startBtn{border:0;border-radius:14px;padding:14px 30px;font-weight:900;font-size:18px;background:#ffd43b;color:#201600;box-shadow:0 5px 0 #bd8d00}
+#touchControls{position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:space-between;padding:0 18px;pointer-events:none}
+.ctrl{pointer-events:auto;width:64px;height:64px;border:0;border-radius:50%;background:rgba(255,255,255,.28);color:#fff;font-size:27px;font-weight:900;backdrop-filter:blur(4px);touch-action:none}
+#right{margin-left:76px;margin-right:auto}
+.jump{width:76px;height:76px;background:rgba(255,212,59,.55);color:#201600}
+@media(min-width:800px){#touchControls{opacity:.55}.ctrl{width:58px;height:58px}}

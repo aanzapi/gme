@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Aan Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameWrap">
+    <canvas id="game"></canvas>
+
+    <div id="hud">
+      <div>🪙 <span id="coins">0</span></div>
+      <div>❤️ <span id="lives">3</span></div>
+      <div>⭐ <span id="score">0</span></div>
+    </div>
+
+    <div id="message">
+      <h1>Aan Adventure</h1>
+      <p>Capai bendera untuk menyelesaikan level!</p>
+      <button id="startBtn">MULAI</button>
+    </div>
+
+    <div id="touchControls">
+      <button class="ctrl" id="left">◀</button>
+      <button class="ctrl" id="right">▶</button>
+      <button class="ctrl jump" id="jump">▲</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
